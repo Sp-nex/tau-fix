@@ -1,0 +1,386 @@
+/* ================= GLOBAL ================= */
+
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+  }
+  
+  Html {
+    Scroll-behavior: smooth;
+  }
+  
+  Body {
+    Font-family: ‘Poppins’, sans-serif;
+    Background: #0d1117;
+    Color: #fff;
+    Line-height: 1.6;
+  }
+  
+  .container {
+    Width: 90%;
+    Max-width: 1200px;
+    Margin: auto;
+  }
+  
+  .section {
+    Padding: 80px 0;
+  }
+  
+  H1, h2, h3 {
+    Line-height: 1.3;
+  }
+  
+  A {
+    Text-decoration: none;
+  }
+  
+  Ul {
+    List-style: none;
+  }
+  
+  /* ================= NAVBAR ================= */
+  
+  .header {
+    Position: sticky;
+    Top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+  }
+  
+  .navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 20px 0;
+  }
+  
+  .logo {
+    Font-size: 28px;
+    Font-weight: 700;
+    Color: #fff;
+  }
+  
+  .logo span {
+    Color: #00bfff;
+  }
+  
+  .nav-links {
+    Display: flex;
+    Gap: 30px;
+  }
+  
+  .nav-links a {
+    Color: #fff;
+    Transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    Color: #00bfff;
+  }
+  
+  .menu-btn {
+    Display: none;
+    Font-size: 24px;
+    Cursor: pointer;
+  }
+  
+  /* ================= HERO ================= */
+  
+  .hero {
+    Position: relative;
+    Min-height: 100vh;
+    Background:
+      Linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url(‘../images/hero-bg.jpg’) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    Position: relative;
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    Font-size: 58px;
+    Max-width: 800px;
+  }
+  
+  .hero p {
+    Margin-top: 20px;
+    Max-width: 650px;
+    Font-size: 18px;
+  }
+  
+  .hero-buttons {
+    Margin-top: 30px;
+    Display: flex;
+    Gap: 20px;
+  }
+  
+  /* ================= BUTTONS ================= */
+  
+  .btn {
+    Padding: 14px 28px;
+    Border-radius: 8px;
+    Font-weight: 600;
+    Transition: 0.3s;
+    Display: inline-block;
+  }
+  
+  .primary-btn {
+    Background: #00bfff;
+    Color: #fff;
+  }
+  
+  .primary-btn:hover {
+    Background: #009acd;
+  }
+  
+  .whatsapp-btn {
+    Background: #25D366;
+    Color: #fff;
+  }
+  
+  /* ================= SERVICES ================= */
+  
+  .section-title {
+    Text-align: center;
+    Margin-bottom: 50px;
+  }
+  
+  .services-grid,
+  .why-grid,
+  .testimonial-grid {
+    Display: grid;
+    Grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    Gap: 30px;
+  }
+  
+  .service-card,
+  .why-card,
+  .testimonial-card {
+    Background: #161b22;
+    Padding: 30px;
+    Border-radius: 15px;
+    Transition: 0.3s;
+  }
+  
+  .service-card:hover,
+  .why-card:hover,
+  .testimonial-card:hover {
+    Transform: translateY(-10px);
+  }
+  
+  .service-card i,
+  .why-card i {
+    Font-size: 40px;
+    Margin-bottom: 20px;
+    Color: #00bfff;
+  }
+  
+  /* ================= EMERGENCY ================= */
+  
+  .emergency {
+    Background: linear-gradient(90deg,#00bfff,#005eff);
+    Padding: 60px 0;
+  }
+  
+  .emergency-content {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Gap: 30px;
+  }
+  
+  /* ================= CONTACT ================= */
+  
+  .contact-grid {
+    Display: grid;
+    Grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    Gap: 40px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    Width: 100%;
+    Padding: 15px;
+    Margin-bottom: 20px;
+    Border: none;
+    Border-radius: 10px;
+  }
+  
+  .contact-form button {
+    Border: none;
+    Cursor: pointer;
+  }
+  
+  /* ================= FAQ ================= */
+  
+  .faq-item {
+    Background: #161b22;
+    Padding: 20px;
+    Margin-bottom: 20px;
+    Border-radius: 10px;
+  }
+  
+  /* ================= MAP ================= */
+  
+  .map-section iframe {
+    Width: 100%;
+    Height: 400px;
+    Border: 0;
+  }
+  
+  /* ================= CTA ================= */
+  
+  .cta-banner {
+    Background: #111827;
+    Padding: 60px 0;
+    Text-align: center;
+  }
+  
+  /* ================= FOOTER ================= */
+  
+  .footer {
+    Background: #000;
+    Padding-top: 60px;
+  }
+  
+  .footer-grid {
+    Display: grid;
+    Grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    Gap: 30px;
+  }
+  
+  .footer-bottom {
+    Text-align: center;
+    Padding: 20px;
+    Margin-top: 30px;
+    Border-top: 1px solid #222;
+  }
+  
+  /* ================= FLOATING WHATSAPP ================= */
+  
+  .floating-whatsapp {
+    Position: fixed;
+    Bottom: 20px;
+    Right: 20px;
+    Background: #25D366;
+    Width: 60px;
+    Height: 60px;
+    Border-radius: 50%;
+    Display: grid;
+    Place-items: center;
+    Color: white;
+    Font-size: 28px;
+    z-index: 999;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  
+  @media(max-width: 768px) {
+  
+    .hero h1 {
+      Font-size: 38px;
+    }
+  
+    .nav-links {
+      Position: absolute;
+      Top: 80px;
+      Right: -100%;
+      Flex-direction: column;
+      Background: #111;
+      Width: 250px;
+      Padding: 30px;
+      Transition: 0.3s;
+    }
+  
+    .nav-links.active {
+      Right: 0;
+    }
+  
+    .menu-btn {
+      Display: block;
+    }
+  
+    .emergency-content {
+      Flex-direction: column;
+      Text-align: center;
+    }
+  
+  }
+
+  /* PAGE HERO */
+
+.page-hero{
+    padding:120px 0 80px;
+    background:linear-gradient(135deg,#0d1117,#111827);
+    text-align:center;
+  }
+  
+  .page-hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+  }
+  
+  .page-hero p{
+    max-width:700px;
+    margin:auto;
+  }
+  
+  /* ABOUT PAGE */
+  
+  .about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:50px;
+    align-items:center;
+  }
+  
+  .about-grid img{
+    width:100%;
+    border-radius:20px;
+  }
+  
+  .about-points{
+    margin-top:30px;
+    display:grid;
+    gap:15px;
+  }
+  
+  .about-points div{
+    background:#161b22;
+    padding:15px;
+    border-radius:10px;
+  }
+  
+  .about-points i{
+    color:#00bfff;
+    margin-right:10px;
+  }
+  
+  /* SOLAR PAGE */
+  
+  .solar-list{
+    margin:25px 0;
+  }
+  
+  .solar-list li{
+    margin-bottom:15px;
+  }
+  
+  /* SELECT INPUT */
+  
+  .contact-form select{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+  }
+  
+  
+  
