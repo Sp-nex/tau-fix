@@ -63,7 +63,7 @@
   }
   
   .logo span {
-    Color: #00bfff;
+    Color: #08a008;
   }
   
   .nav-links {
@@ -77,7 +77,7 @@
   }
   
   .nav-links a:hover {
-    Color: #00bfff;
+    Color: #08a008;
   }
   
   .menu-btn {
@@ -131,7 +131,7 @@
   }
   
   .primary-btn {
-    Background: #00bfff;
+    Background: #08a008;
     Color: #fff;
   }
   
@@ -184,7 +184,7 @@
   /* ================= EMERGENCY ================= */
   
   .emergency {
-    Background: linear-gradient(90deg,#00bfff,#005eff);
+    Background: linear-gradient(90deg,#EF4444,#F97316);
     Padding: 60px 0;
   }
   
@@ -220,7 +220,7 @@
   /* ================= FAQ ================= */
   
   .faq-item {
-    Background: #161b22;
+    Background: #2f3b4d;
     Padding: 20px;
     Margin-bottom: 20px;
     Border-radius: 10px;
@@ -237,7 +237,7 @@
   /* ================= CTA ================= */
   
   .cta-banner {
-    Background: #111827;
+    Background: #9df8b4;
     Padding: 60px 0;
     Text-align: center;
   }
